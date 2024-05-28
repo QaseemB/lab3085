@@ -14,4 +14,14 @@ function SumOfArray(x) {
     }
     return sum
 }
-console.log(SumOfArray(arrayOfNumbers))
+// console.log(SumOfArray(arrayOfNumbers))
+
+
+function AvgOfArray(a){
+    let sum = 0
+    for ( let i = 0; i <a.length; i++){
+        sum += a[i] / a.length
+    }
+    return sum
+}
+// console.log(AvgOfArray(arrayOfNumbers))
