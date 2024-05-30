@@ -5,23 +5,45 @@
 
 
 
-const arrayOfNumbers = [8,15,43,67,23,33]
+// const arrayOfNumbers = [8,15,43,67,23,33]
 
-function SumOfArray(x) {
-    let sum = 0
-    for ( let i = 0; i <x.length; i++){
-        sum += x[i]
-    }
-    return sum
-}
+// function SumOfArray(x) {
+//     let sum = 0
+//     for ( let i = 0; i <x.length; i++){
+//         sum += x[i]
+//     }
+//     return sum
+// }
 // console.log(SumOfArray(arrayOfNumbers))
 
 
-function AvgOfArray(a){
-    let sum = 0
-    for ( let i = 0; i <a.length; i++){
-        sum += a[i] / a.length
-    }
-    return sum
-}
+// function AvgOfArray(a){
+//     let sum = 0
+//     for ( let i = 0; i <a.length; i++){
+//         sum += a[i] / a.length
+//     }
+//     return sum
+// }
 // console.log(AvgOfArray(arrayOfNumbers))
+
+let ArrofArr = [
+    [ 'ID','Name', 'Occupation','Age','yabbadabadoo','cake','yikes','6' ],
+    [ '42','Bruce','Knight','41' ],
+    [ '57','Bob','Fry','Cook','19','abcd','hellomate' ],
+    [ '63','Blaine','Quiz Master','58','lmnopqrstuv','xy&z' ],
+    [ '98','Bill','Doctors','Assistant','26','1','2','3' ]
+  ]
+
+  function LongestString(L){
+    let longest = '';
+    for (let i = 0; i < L.length; i++) {
+        for (let j = 0; j < L[i].length; j++) {
+            if (L[i][j].length > longest.length) {
+                longest = L[i][j];
+            }
+        }
+    }
+    return longest;
+}
+
+  console.log(LongestString(ArrofArr))
